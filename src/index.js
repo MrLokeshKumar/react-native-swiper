@@ -23,7 +23,7 @@ const styles = {
   container: {
     backgroundColor: 'transparent',
     position: 'relative',
-    // flex: 1
+    height: 200
   },
 
   wrapperIOS: {
@@ -864,7 +864,7 @@ export default class extends Component {
     }
 
     return (
-      <View style={[styles.container, containerStyle]} onLayout={this.onLayout}>
+      <View style={{height:200}} onLayout={this.onLayout}>
         {this.renderScrollView(pages)}
         {showsPagination &&
           (renderPagination
